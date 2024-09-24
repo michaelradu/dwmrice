@@ -1,5 +1,16 @@
 if you can read this you got nvidia, intel-ucode and NetworkManager
 
+
+Debian
+--------
+for suckless:
+libx11-dev
+libxinerama-dev
+libxft-dev
+libx11-xcb-dev
+libxcb-res0-dev
+libharfbuzz-dev
+
 System 
 ---------
 xorg-server
@@ -9,6 +20,7 @@ xorg-xset
 xorg-xprop
 xorg-xbacklight	
 polkit
+zsh // or else it won't run properly with bash, gotta source files with .zprofile
 
 Filesystems DUH
 ---------------
@@ -76,5 +88,23 @@ pywal
 UNUSED ATM
 -----------
 python-qdarkstyle // not installed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

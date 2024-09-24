@@ -1,6 +1,5 @@
 # Luke's lf settings
 
-
 # Note on Image Previews
 # For those wanting image previews, like this system, there are four steps to
 # set it up. These are done automatically for LARBS users, but I will state
@@ -25,6 +24,8 @@ set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
 set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/scope'
 set autoquit true
+set previewer ~/.config/lf/previewer
+set cleaner ~/.config/lf/cleaner
 
 # cmds/functions
 cmd open ${{
@@ -34,7 +35,7 @@ cmd open ${{
         text/*|application/json|inode/x-empty|application/x-subrip) $EDITOR $fx;;
 	image/x-xcf) setsid -f gimp $f >/dev/null 2>&1 ;;
 	image/svg+xml) display -- $f ;;
-	image/*) rotdir $f | grep -i "\.\(png\|jpg\|jpeg\|gif\|webp\|avif\|tif\|ico\)\(_large\)*$" |
+	image/*) find "$(dirname "$f")" -maxdepth 1 -type f -iregex '.*\.\(png\|jpg\|jpeg\|gif\|webp\|avif\|tif\|ico\)\(_large\)*$' |
 		setsid -f nsxiv -aio 2>/dev/null | while read -r file; do
 			[ -z "$file" ] && continue
 			lf -remote "send select \"$file\""
@@ -176,6 +177,3 @@ map T $nsxiv -t "$(pwd)" # opens thumbnail mode
 map <c-l> unselect
 
 
-
-# Source Bookmarks
-source "~/.config/lf/shortcutrc"

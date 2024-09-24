@@ -1,0 +1,4 @@
+Outside of APT
+----------------
+ueberzugpp -> github
+pywal -> pip
