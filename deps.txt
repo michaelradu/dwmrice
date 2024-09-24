@@ -1,0 +1,80 @@
+if you can read this you got nvidia, intel-ucode and NetworkManager
+
+System 
+---------
+xorg-server
+xorg-xwininfo
+xorg-xwininfo
+xorg-xset
+xorg-xprop
+xorg-xbacklight	
+polkit
+
+Filesystems DUH
+---------------
+dosfstools
+exfat-utils
+ntfs-3g
+simple-mtpfs
+	
+Essentials for most systems
+----------
+man-db
+pipewire-pulse
+wireplumber
+pulsemixer
+unzip
+
+Fonts
+--------
+ttf-font-awesome // not installed, but ligaments if needed
+ttf-dejavu
+noto-fonts
+noto-fonts-emoji
+
+Applications & RICE Depends Setup
+-------
+nmcli
+slock
+
+brave-bin
+qbittorrent
+
+lf-git
+ueberzugpp
+
+xcompmgr
+arandr
+libnotify
+dunst
+xwallpaper
+gtk-theme-arc-gruvbox-git // not installed, but a theme is needed for gtk
+lxappearance // change gtk themes
+
+mpd
+ncmpcpp
+
+nsxiv
+mpv
+
+newsboat
+
+zathura
+
+
+maim // screenshots
+unclutter // hides inactive cursor, not installed
+xcape // special key remapping from LARBS
+xclip // command-line copy paste, not installed, works without at the moment
+xdotool // installed, but not automatic
+
+PIP
+------
+pywal
+
+
+UNUSED ATM
+-----------
+python-qdarkstyle // not installed
+
+
